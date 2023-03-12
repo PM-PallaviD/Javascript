@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form{
+        margin-top: 100px;
+        margin-left: 300px;
+        margin-right: 300px ;
+        
+    }
+</style>
+<body>
+    <form name="myform" onsubmit="return validateform()">
+        name <input type="text" name="name"><br><br>
+        password <input type="password" name="password"><br><br><br><br><br>
+        <input type="submit" value="register">
+
+    </form>
+
+    <script>
+        function validateform(){
+            var name = document.myform.name.value;
+            var password = document.myform.password.value;
+
+            if(name ==null || name == ""){
+                alert("name can't be blank");
+                return false;
+            }
+            else if(password > 6){
+                alert("password must be more than six character");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

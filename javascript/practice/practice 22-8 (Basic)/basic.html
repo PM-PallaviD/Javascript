@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HOW TO DISPLAY OUTPUT IN JAVASCRIPT  -->
+             <!-- Writing into an HTML element, using     
+    innerHTML. -->
+             <!-- Writing into the HTML output using 
+document.write(). -->
+            <!-- Writing into an alert box, using 
+window.alert(). -->
+            <!-- Writing into the browser console, using
+ console.log(). -->
+
+ <script>
+    //   Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+</script>
+
+ <!-- PRIMITIVE  -->
+<script>
+    var X = "hello"
+    document.write(X)
+    
+    const p = 6789;
+    document.write(p)
+    </script><br><br>
+    
+    
+    <!--  HOw TO UNDEFINED PRINT -->
+    <script>
+    let b;
+    document.write(b)
+    </script><br><br>
+    
+    <!-- NON PRIMITIVE  -->
+     <!-- ARRAY -->
+     <script>
+    const arr=["hello", "pune", 76 , "kothrud"];
+    document.write(arr)
+    </script><br><br>
+    
+    <!-- OBJECT  -->
+    <script>
+    let obj = {
+        name :"codekul",
+        address : "pune",
+        age : 25
+    
+    }
+    document.write(obj)
+    </script><br><br>
+    
+
+ <!-- HPW TO FIND ELEMENT WITH FIND OPERATOR  -->
+ <script>
+    const A=[4,5,6,7,8];
+    const find=A.find(Element => Element >6)
+    document.write(find)
+ </script><br><br>
+
+ <!-- HOW TO FIND ELEMENT WITH FILER OPERATOR  -->
+ <script>
+    const B=[4,5,6,7,8];
+    const filter=B.filter(Element => Element >6)
+    document.write(find)
+ </script><br><br>
+
+ <!-- HOW TO USE SORT METHOD  -->
+<p id="demo1"></p>
+<script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo1").innerHTML = fruits.sort();
+    </script><br><br>
+
+<!-- HOW TO FIND INDEX OF WITH indexof OPERATOR  -->
+<script>
+    const array1 =[7,8,9,5,4];
+    document.write(array1.indexOf(5))
+</script><br><br>
+
+<!-- HOW TO FIND LENGTH OF ARRAY  -->
+<script>
+const array2 =[1,2,3,8,9];
+document.write(array2.length)
+</script><br><br>
+
+<!-- HOW TO USING MAP METHOD  -->
+<script>
+    const array3=[2,4,6,8];
+    const mapp=array3.map(element => element *3)
+    document.write(mapp)
+</script><br><br>
+
+<!-- HOW TO USE JOIN METHOD -->
+<script>
+    const array4=["pallavi","snehal","shweta","rugi"];
+    const joined=array4.join(",");
+    document.write(joined)
+</script><br><br>
+   
+<!-- HOW TO FIND INDEX OF ARRAY  -->
+<body>
+    const array5=[
+        ['pallavi',34,'pune',6],
+        ['pallu',22,'mumbai',9],
+        ['palavi',27,'banglore',11],
+    ];
+    document.write(array5[2][2])
+    document.write(array5[1][1])
+</script><br><br>
+
+ <!-- PUSH/POP ELEMENT IN ARRAY  -->
+ <body>
+    <script>
+    const array6=[3,5,6];
+    array6.push("javascript", 22,23)
+    array6.pop(4)
+    document.write(array6)
+ </script><br><br>
+
+ <!-- UNSHIFT ELEMENT IN ARRAY -->
+ <script>
+    const array7=[3,4,5,6];
+array7.unshift(4)
+document.write(array7)
+</script><br><br>
+
+ <!-- HOW TO JOIN WITH concate OPERATOR   -->
+ <p id="demo3"></p>
+
+ <script>
+ const ar1 = ["pallavi", "snehal"];
+ const ar2 = ["Emil", "phone no", "age"];
+ const ar3 = ["profession"];
+ 
+ const children = ar1.concat(ar2, ar3); 
+ document.getElementById("demo3").innerHTML = children;
+ </script><br><br>
+ 
+ <!-- HOW TO USING array.from OPERATOR  -->
+ <script>
+     let text2 = "ABCDEFG"
+     const myArr = Array.from(text2);
+     
+     document.write(myArr)
+     </script><br><br>
+
+<!--  HOW TO CHECK INDEX IN MULTIDIMENSIONAL ARRAY  -->
+<script>
+ const arr1=[[11,12,13],[14,15,16],[17,18,19]];
+ document.write(arr1)
+ <br>
+ document.write(arr1[1])
+ <br>
+ document.write(arr1 [1][2] )
+</script><br><br>
+
+
+<script>
+const arr2=[[pallavi, snehal,shwetali],[bhakti, bhavana, tai],[janavhi,jay,uma]];
+document.write(arr2)
+<br>
+document.write(arr2[1])
+<br>
+document.write(arr2 [1][2] )
+</script><br><br>
+
+
+
+
+</body>
+</html>

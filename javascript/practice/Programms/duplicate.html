@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // REMOVE DUPLICATE ITEM IN ARRAY 
+        const myArray = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd'];
+    const myArrayWithNoDuplicates = myArray.reduce((previousValue, currentValue) => {
+      if (previousValue.indexOf(currentValue) === -1) {
+        previousValue.push(currentValue);
+      }
+      return previousValue;
+    }, []);
+    
+    console.log(myArrayWithNoDuplicates);
+    </script>
+
+
+
+
+
+<script>
+    const myArray1 = ['H', 'A', 'P', 'P', 'Y', 'B', 'I', 'R', 'T', 'D', 'd', 'A','Y'];
+    console.log(myArray1)
+    const myArrayWithNoDuplicates1 = myArray1.reduce((previousValue, currentValue) => {
+      if (previousValue.indexOf(currentValue) === -1) {
+        previousValue.push(currentValue);
+      }
+      return previousValue;
+    }, []);
+    
+    console.log(myArrayWithNoDuplicates1);
+</script>
+    
+</body>
+</html>

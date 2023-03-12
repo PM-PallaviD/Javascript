@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h><b>INTERVIEW PREPARATION<b></h>
+
+    <!-- HOW TO DISPLAY OUTPUT IN JAVASCRIPT  -->
+    <!-- Writing into an HTML element, using     
+    innerHTML. -->
+    <!-- Writing into the HTML output using 
+document.write(). -->
+    <!-- Writing into an alert box, using 
+window.alert(). -->
+    <!-- Writing into the browser console, using
+ console.log(). -->
+
+    <!-- HOW TO FIND ELEMENT WITH (find) OPERATOR -->
+    <script>
+      const a = [8, 12, 15, 18];
+      const find = a.find((Element) => Element > 10);
+      console.log(find);
+    </script>
+
+    <!-- HOW TO FIND ELEMENT WITH (filter) OPERATOR  -->
+    <script>
+      const abc = [8, 12, 15, 18];
+      const filter = abc.filter((Element) => Element < 10);
+      console.log(filter);
+    </script>
+
+    <!-- HOW TO USE (SORT) METHOD  -->
+    <p id="demo1"></p>
+    <script>
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("demo1").innerHTML = fruits.sort();
+    </script>
+
+    <!-- HOW TO FIND INDEX OF WITH (indexOf) OPERATOR  -->
+    <script>
+      const ab = [8, 12, 15, 18];
+      console.log(ab.indexOf(12));
+    </script>
+
+    <!-- HOW TO FIND LENGTH OF ARRAY -->
+    <script>
+      const md = [1, 2, 4, 5, 6];
+      console.log(md.length);
+    </script>
+
+    <!-- HOW TO USING (MAP) METHOD  -->
+
+    <p id="demo"></p>
+    <script>
+      const numbers = [4, 9, 16, 25];
+      document.getElementById("demo").innerHTML = numbers.map(Math.sqrt);
+    </script>
+
+    <!-- HOW TO USED (JOIN) METHOD  -->
+    <p id="demo2"></p>
+
+    <script>
+      const fruit = ["Banana", "Orange", "Apple", "Mango"];
+      let text = fruit.join(" , ");
+
+      document.getElementById("demo2").innerHTML = text;
+    </script>
+
+    <!-- HOW TO FIND INDEX OF ARRAY  -->
+    <script>
+      let m = [
+        ["abc", 1, 2, "xyz"],
+        [1, "pune", 2, 43, 5],
+        ["abc", 33, 55, "l"],
+      ];
+      console.log(m[1][1]);
+      console.log(m[2][2]);
+      console.log(m[2]);
+    </script>
+
+    <!-- PRIMITIVE  -->
+    <script>
+      var x = "hello";
+      console.log(x);
+
+      const p = 6789;
+      console.log(p);
+    </script>
+
+    <!--  HOw TO UNDEFINED PRINT -->
+    <script>
+      let b;
+      console.log(b);
+    </script>
+
+    <!-- NON PRIMITIVE  -->
+    <!-- ARRAY -->
+    <script>
+      const arr = ["hello", "pune", 76, "kothrud"];
+      console.log(arr);
+    </script>
+
+    <!-- OBJECT  -->
+    <script>
+      let obj = {
+        name: "codekul",
+        address: "pune",
+        age: 25,
+      };
+      console.log(obj);
+    </script>
+
+    <!-- (PUSH) ELEMENT IN ARRAY  -->
+    <script>
+      const array = [3, 4, 5, 6];
+      console.log(array);
+      array.push("javascript", 22, 23);
+      console.log(array);
+    </script>
+
+    <!-- (POP) ELEMENT IN ARRAY  -->
+    <script>
+      const array1 = [3, 4, 5, 6];
+      array1.push("javascript", 22, 23);
+      array1.pop(4);
+      console.log(array1);
+    </script>
+
+    <!-- (UNSHIFT) ELEMENT IN ARRAY -->
+    <script>
+      const array2 = [3, 4, 5, 6];
+      array2.unshift(4);
+      console.log(array2);
+    </script>
+
+    <!--  HOW TO CHECK INDEX IN MULTIDIMENSIONAL ARRAY  -->
+    <script>
+      const arr1 = [
+        [11, 12, 13],
+        [14, 15, 16],
+        [17, 18, 19],
+      ];
+      console.log(arr1);
+      console.log(arr1[1]);
+      console.log(arr1[1][2]);
+    </script>
+
+    <script>
+      const arr2 = [
+        [pallavi, snehal, shwetali],
+        [bhakti, bhavana, tai],
+        [janavhi, jay, uma],
+      ];
+      console.log(arr2);
+      console.log(arr2[1]);
+      console.log(arr2[1][2]);
+    </script>
+
+    <!-- HOW TO JOIN WITH (concat) OPERATOR  -->
+    <p id="demo3"></p>
+
+    <script>
+      const ar1 = ["pallavi", "snehal"];
+      const ar2 = ["Emil", "phone no", "age"];
+      const ar3 = ["profession"];
+
+      const children = ar1.concat(ar2, ar3);
+      document.getElementById("demo3").innerHTML = children;
+    </script>
+
+    <!-- HOW TO USING array.(from) OPERATOR  -->
+    <script>
+      let text2 = "ABCDEFG";
+      const myArr = Array.from(text2);
+
+      console.log(myArr);
+    </script>
+
+    <!-- ---------HOW TO USE SPREAD OPERATOR -------  -->
+    <script>
+      const num = [1, 2, 3];
+
+      console.log(sum(...num));
+    </script>
+  </body>
+</html>

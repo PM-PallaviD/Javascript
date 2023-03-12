@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript - Add HTML Table Row </title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            
+            function addRow()
+            {
+                // get input values
+                var fname = document.getElementById('fname').value;
+                 var lname = document.getElementById('lname').value;
+                 var add = document.getElementById('add').value;
+                  var age = document.getElementById('age').value;
+                  var con = document.getElementById('con').value;
+
+                  
+                  // get the html table
+                  // 0 = the first table
+                  var table = document.getElementsByTagName('table')[0];
+                  
+                  // add new empty row to the table
+                  // 0 = in the top 
+                  // table.rows.length = the end
+                  // table.rows.length/2+1 = the center
+                  var newRow = table.insertRow(table.rows.length/2+1);
+                  
+                  // add cells to the row
+                  var cel1 = newRow.insertCell(0);
+                  var cel2 = newRow.insertCell(1);
+                  var cel3 = newRow.insertCell(2);
+                  var cel4 = newRow.insertCell(3);
+                  var cel5 = newRow.insertCell(4);
+
+                  
+                  // add values to the cells
+                  cel1.innerHTML = fname;
+                  cel2.innerHTML = lname;
+                  cel3.innerHTML = add;
+                  cel4.innerHTML = age;
+                  cel5.innerHTML = con;
+
+            }
+            
+        </script>
+        
+    </head><style>
+        div{
+            margin-top: 40px;
+            margin-left: 500px;
+            margin-right: 500px;
+            padding-top: 50px;
+
+            background-color: rgb(228, 165, 206);
+
+        }
+    </style>
+
+    <body align="center" border="5">
+       <div>
+        First Name: <input type="text" name="fname" id="fname" /><br/><br/>
+        Last Name: <input type="text" name="lname" id="lname" /><br/><br/>
+        Address: <textarea id="add" name="address" rows="2" cols="25"></textarea><br/><br/>
+        Age: <input type="text" name="age" id="age" /><br/><br/>
+        Contact No: <input type="text" name="con" id="con" /><br/><br/>
+        <button onclick="addRow();">Submit</button><br/><br/>
+    </div><br><br<<br><br><br>
+        <table  border="1"  align="center">
+            
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Age</th>
+                <th>Contact No</th>
+
+
+            </tr>
+            
+           
+            
+        </table>
+    
+    </body>
+
+</html>

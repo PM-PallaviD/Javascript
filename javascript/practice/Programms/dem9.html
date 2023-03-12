@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //asychronous definition :
+        // asychronous code allows the program to be executed immediately where the synchronous code will block further execution of the remaining code until it finishes the current one.
+        
+        // .then()_method
+        // the then() method returns a promise, it takes up to two arguments: callback functions for the success and failure cases of the Promise.
+       
+        const getdata = async () => {
+            var data = 'hello';
+            return data;
+        }
+
+        getdata().then(data => console.log(data));
+
+
+    
+
+    </script>
+    
+
+</body>
+
+</html>

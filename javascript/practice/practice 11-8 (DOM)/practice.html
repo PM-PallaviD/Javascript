@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HOW TO GET OUTPUT USING INNERHTML (output disply in html page ) -->
+    <p id="demo"></p>
+
+    <script>
+      document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+    <br /><br /><br />
+    <!-- HOW TO GET OUTPUT USING document.write() (output disply on page)-->
+    <script>
+      document.write(5 + 6);
+    </script>
+    <br /><br /><br />
+    <!-- HOW TO GET OUTPUT USING windows.alert() (output disply in alert format) -->
+    <script>
+      window.alert(5 + 6);
+    </script>
+    <br /><br /><br />
+    <!-- HOW TO GET OUTPUT USING console.log() (output display in console) -->
+    <script>
+      console.log(5 + 6);
+    </script>
+    <br /><br /><br />
+
+    <!-- ONCLICK EVENT  -->
+    <button onclick="fun()">Click me</button>
+    <script>
+      function fun() {
+        alert("Welcome to the javaTpoint.com");
+      }
+    </script>
+    <br /><br /><br />
+
+    <!-- DOUBLE CLICK  -->
+    <button ondblclick="func()">Press me</button>
+    <script>
+      function func() {
+        alert("Welcome to the CODING");
+      }
+    </script>
+    <br /><br /><br />
+    <!-- ONLOAD FUNCTION  [ onload="funct()"]-->
+
+    <script>
+      function funct() {
+        alert("Hello World!!, Welcome to the javaTpoint.com");
+      }
+    </script>
+    <br /><br /><br />
+
+    <!-- FIRST  -->
+    <p id="demo">pragraph</p>
+    <button onclick="MyFunction()">click</button>
+    <script>
+      function MyFunction() {
+        document.getElementById("demo").innerHTML = "paragraph changed";
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.fontSize = "4rem";
+        document.getElementById("demo").style.fontFamily = "italic";
+        document.getElementById("demo").style.alignItems = "left";
+        document.getElementById("demo").style.backgroundColor = "green";
+      }
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- SECOND  -->
+
+    <div class="contain">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, dolor.
+    </div>
+    <button onclick="MyDiv()">click mi</button>
+    <script>
+      function MyDiv() {
+        document.getElementsByClassName("contain").innerHTML = "DIV";
+        document.getElementsByClassName("contain").style.fontSize = "3rem";
+      }
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- THIRD  -->
+
+    <div>
+      <p id="id1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+    <div>
+      <p id="id2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+    <div>
+      <p id="id3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+    <div>
+      <p id="id4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+
+    <button onclick="first()">FONTSIZE</button>
+    <button onclick="second()">COLOR</button>
+    <button onclick="third()">INNERHTML</button>
+    <button onclick="fourth()">BACKGROUND COLOR</button>
+    <script>
+      function first() {
+        document.getElementById("id1").style.fontSize = "2rem";
+      }
+      function second() {
+        document.getElementById("id2").style.color = "blue";
+      }
+      function third() {
+        document.getElementById("id3").innerHTML = "good morning";
+        document.getElementById("id3").style.fontSize = "4rem";
+        document.getElementById("id3").style.color = "green";
+      }
+      function fourth() {
+        document.getElementById("id4").style.backgroundColor = "red";
+        document.getElementById("id4").style.fontSize = "3rem";
+      }
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- FOURTH  -->
+    <div>
+      <p id="i1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+    <div>
+      <p id="i2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+    <div>
+      <p id="i3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+    <div>
+      <p id="i4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt facere
+        a dolor non consequuntur, praesentium totam sit laudantium voluptatem
+        labore et asperiores magni voluptate aperiam aliquid inventore dolorem
+        veniam obcaecati voluptas illo. Nemo cupiditate, laborum ratione eius,
+        facere quod assumenda tempora saepe iste consequuntur vel distinctio
+        exercitationem adipisci, excepturi iusto?
+      </p>
+    </div>
+
+    <button onclick="fir('Red')">Red</button>
+    <button onclick="sec('blue')">blue</button>
+    <button onclick="thi('Yellow')">Yellow</button>
+    <button onclick="fou('green')">Green</button>
+
+    <script>
+      function fir(ncolor) {
+        const ele = document.getElementById("i1");
+        ele.style.color = ncolor;
+      }
+
+      function sec(ncolor) {
+        const ele = document.getElementById("i2");
+        ele.style.color = ncolor;
+      }
+
+      function thi(ncolor) {
+        const ele = document.getElementById("i3");
+        ele.style.color = ncolor;
+      }
+
+      function fou(ncolor) {
+        const ele = document.getElementById("i4");
+        ele.style.color = ncolor;
+      }
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- FIFTH  -->
+
+    <div class="class">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, nobis?
+    </div>
+    <div class="class">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+      debitis.
+    </div>
+    <div class="class">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptate!
+    </div>
+    <div class="class">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, unde?
+    </div>
+    <button onclick="para()">ya click mi</button>
+    <script>
+      function para() {
+        const a = document.getElementsByClassName("class");
+        a[2].style.color = "blue";
+        a[0].style.backgroundColor = "orange";
+        a[3].style.fontSize = "3rem";
+      }
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+
+    <!-- SISTH (6) -->
+    <p id="para">This is Date</p>
+    <button onclick="DisplyDate()">Display Date</button>
+    <script>
+      function DisplyDate() {
+        document.getElementById("para").innerHTML = Date();
+      }
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- ADD EVENT LISTENER  using alert -->
+    <button id="myBtn">Try it</button>
+
+    <script>
+      document.getElementById("myBtn").addEventListener("click", function () {
+        alert("Hello World!");
+      });
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+    <!-- ADD EVENT LISTENER  using document.write -->
+
+    <!-- <button id="myBt">Try </button>
+
+<script>
+document.getElementById("myBt").addEventListener("click", function() {
+  document.write("Hello World!");
+});
+</script> -->
+    <br /><br /><br /><br /><br /><br /><br />
+    <p id="demo"></p>
+    <button id="id">TIME IS HERE</button>
+    <script>
+      document.getElementById("id").addEventListener("click", displayDate);
+      function displayDate() {
+        document.getElementById("demo").innerHTML = "Date";
+      }
+    </script>
+    <br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
